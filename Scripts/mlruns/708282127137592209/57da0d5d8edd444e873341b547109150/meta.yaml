@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/57da0d5d8edd444e873341b547109150/artifacts
+end_time: 1749510922919
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: 57da0d5d8edd444e873341b547109150
+run_name: wistful-bird-466
+run_uuid: 57da0d5d8edd444e873341b547109150
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749510893921
+status: 4
+tags: []
+user_id: sacko

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/0/2bcadc6195044b3db4e6b5ebdda39e48/artifacts
+end_time: 1748469253345
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2bcadc6195044b3db4e6b5ebdda39e48
+run_name: adaptable-tern-120
+run_uuid: 2bcadc6195044b3db4e6b5ebdda39e48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748469253184
+status: 3
+tags: []
+user_id: sacko

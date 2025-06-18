@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/2a4c6eeca1c64c38928bf531b6f127a8/artifacts
+end_time: 1749509004900
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: 2a4c6eeca1c64c38928bf531b6f127a8
+run_name: receptive-croc-223
+run_uuid: 2a4c6eeca1c64c38928bf531b6f127a8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749508891362
+status: 4
+tags: []
+user_id: sacko

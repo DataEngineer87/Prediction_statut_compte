@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/e980ff8081974a708a641691d0612367/artifacts
+end_time: 1749507488755
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: e980ff8081974a708a641691d0612367
+run_name: lyrical-bat-187
+run_uuid: e980ff8081974a708a641691d0612367
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749507373306
+status: 4
+tags: []
+user_id: sacko

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/b5c4396b6ad24f769a8fb9aa4ff28fa4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: b5c4396b6ad24f769a8fb9aa4ff28fa4
+run_name: burly-duck-45
+run_uuid: b5c4396b6ad24f769a8fb9aa4ff28fa4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749504355021
+status: 1
+tags: []
+user_id: sacko

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/641a139f4c344cef86e0155932dd05a4/artifacts
+end_time: 1749786816257
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: 641a139f4c344cef86e0155932dd05a4
+run_name: rare-mare-233
+run_uuid: 641a139f4c344cef86e0155932dd05a4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749786718634
+status: 3
+tags: []
+user_id: sacko

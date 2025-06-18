@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/0/b6a1666a6a4c4ab7a31f7ace89681c84/artifacts
+end_time: 1748465989859
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b6a1666a6a4c4ab7a31f7ace89681c84
+run_name: illustrious-auk-37
+run_uuid: b6a1666a6a4c4ab7a31f7ace89681c84
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748465989646
+status: 3
+tags: []
+user_id: sacko

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/0/77ad8efec1eb436689493983f55cad46/artifacts
+end_time: 1748547233179
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 77ad8efec1eb436689493983f55cad46
+run_name: luxuriant-conch-682
+run_uuid: 77ad8efec1eb436689493983f55cad46
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748547233002
+status: 3
+tags: []
+user_id: sacko

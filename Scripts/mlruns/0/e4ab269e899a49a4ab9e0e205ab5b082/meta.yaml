@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/0/e4ab269e899a49a4ab9e0e205ab5b082/artifacts
+end_time: 1748473978492
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e4ab269e899a49a4ab9e0e205ab5b082
+run_name: useful-swan-74
+run_uuid: e4ab269e899a49a4ab9e0e205ab5b082
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748473978354
+status: 3
+tags: []
+user_id: sacko

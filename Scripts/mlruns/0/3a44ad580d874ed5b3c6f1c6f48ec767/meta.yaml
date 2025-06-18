@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/0/3a44ad580d874ed5b3c6f1c6f48ec767/artifacts
+end_time: 1748473907825
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3a44ad580d874ed5b3c6f1c6f48ec767
+run_name: salty-crane-147
+run_uuid: 3a44ad580d874ed5b3c6f1c6f48ec767
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748473907605
+status: 3
+tags: []
+user_id: sacko

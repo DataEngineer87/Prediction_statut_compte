@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/5b349e97cb764092aa9bf992f92faed4/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: 5b349e97cb764092aa9bf992f92faed4
+run_name: unruly-ox-480
+run_uuid: 5b349e97cb764092aa9bf992f92faed4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749441221591
+status: 1
+tags: []
+user_id: sacko

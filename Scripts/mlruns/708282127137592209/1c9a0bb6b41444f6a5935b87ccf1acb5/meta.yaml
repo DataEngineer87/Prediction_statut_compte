@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/1c9a0bb6b41444f6a5935b87ccf1acb5/artifacts
+end_time: 1749418686279
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: 1c9a0bb6b41444f6a5935b87ccf1acb5
+run_name: peaceful-bird-16
+run_uuid: 1c9a0bb6b41444f6a5935b87ccf1acb5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749418613415
+status: 4
+tags: []
+user_id: sacko

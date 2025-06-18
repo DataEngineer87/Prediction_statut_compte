@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sacko/Documents/ProjetAchats/Scripts/mlruns/708282127137592209/591674a2a5cf45d5b2c4e10e4b183b0a/artifacts
+end_time: 1749510964352
+entry_point_name: ''
+experiment_id: '708282127137592209'
+lifecycle_stage: active
+run_id: 591674a2a5cf45d5b2c4e10e4b183b0a
+run_name: funny-pug-449
+run_uuid: 591674a2a5cf45d5b2c4e10e4b183b0a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749510934508
+status: 4
+tags: []
+user_id: sacko
