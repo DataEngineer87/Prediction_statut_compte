@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 from fastapi import FastAPI
@@ -64,28 +64,28 @@ def predict(data: dict):
 
     return {"prediction": pred}
 
-# Convertir le notebook en script Python
-import nbformat
-from nbconvert import PythonExporter
-import os
+# # Convertir le notebook en script Python
+# import nbformat
+# from nbconvert import PythonExporter
+# import os
 
-# Définition des chemins 
-notebook_path = "/home/sacko/Documents/ProjetAchats/Scripts/api_model.ipynb"
-script_path = "/home/sacko/Documents/ProjetAchats/Scripts/Utils_model.py"
+# # Définition des chemins 
+# notebook_path = "/home/sacko/Documents/ProjetAchats/Scripts/api_model.ipynb"
+# script_path = "/home/sacko/Documents/ProjetAchats/Scripts/Utils_model.py"
 
-# Fonction pour convertir le notebook en script Python
-def convert_notebook_to_script(notebook_path, script_path):
-    with open(notebook_path) as f:
-        nb = nbformat.read(f, as_version=4)
-    exporter = PythonExporter()
-    script, _ = exporter.from_notebook_node(nb)
+# # Fonction pour convertir le notebook en script Python
+# def convert_notebook_to_script(notebook_path, script_path):
+#     with open(notebook_path) as f:
+#         nb = nbformat.read(f, as_version=4)
+#     exporter = PythonExporter()
+#     script, _ = exporter.from_notebook_node(nb)
 
-    with open(script_path, 'w') as f:
-        f.write(script)
+#     with open(script_path, 'w') as f:
+#         f.write(script)
 
-# Exécuter la conversion
-convert_notebook_to_script(notebook_path, script_path)
-print(f"Le notebook {notebook_path} a été converti en script Python.")
+# # Exécuter la conversion
+# convert_notebook_to_script(notebook_path, script_path)
+# print(f"Le notebook {notebook_path} a été converti en script Python.")
 
 
 # In[ ]:
