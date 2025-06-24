@@ -16,7 +16,7 @@ models/
 *.pkl
 
 # GitHub workflows
-.github/
+#.github/
 
 # IDE / OS
 .DS_Store
