@@ -15,7 +15,7 @@ def test_prediction_api():
         "marital_status": "Single",
         "employment_status": "Employed",
         "education_level": "Bachelor",
-        "number_of_children": 2,
+        "number_of_children": 3,
         "country": "France",
         "subscription_type": "Premium",
         "age_group": "35-44",
