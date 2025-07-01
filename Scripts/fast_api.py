@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # FastAPI
-
 from pydantic import BaseModel
 from typing import Literal
 from fastapi import FastAPI, HTTPException
@@ -17,8 +15,9 @@ app = FastAPI()
 def read_root():
     return {"message": "Bienvenue sur l'API de prédiction du statut de compte."}
 
-# Chargement du modèle
-MODEL_PATH = "/home/sacko/Documents/ProjetAchats/Scripts/models/model.joblib"
+# Définir le chemin relatif au fichier actuel
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "model.joblib")
 
 try:
     model = joblib.load(MODEL_PATH)
