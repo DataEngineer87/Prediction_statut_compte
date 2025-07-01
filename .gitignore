@@ -1,26 +1,3 @@
-# Jupyter Notebooks
-.ipynb_checkpoints/
-*.ipynb
-
-# Python
-__pycache__/
-*.pyc
-
-# Données
-Donnees/
-*.csv
-
-# Modèles
-models/
-*.joblib
-*.pkl
-
-# GitHub workflows
-#.github/
-
-# IDE / OS
-.DS_Store
-
-# Environnements virtuels
-.venv/
-env/
+echo "models/model.joblib" >> .gitignore
+git add .gitignore
+git commit -m "Ignore model.joblib to avoid large files in history"
