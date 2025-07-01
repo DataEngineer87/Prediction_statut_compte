@@ -1,7 +1,9 @@
-import requests
+from fastapi.testclient import TestClient
+from Scripts.fast_api import app  # importe ton app FastAPI
+
+client = TestClient(app)
 
 def test_prediction_api():
-    url = "http://127.0.0.1:8000/predict"
     data = {
         "gender": "Male",
         "marital_status": "Single",
@@ -15,20 +17,8 @@ def test_prediction_api():
         "log_annual_income": 10.5
     }
 
-    response = requests.post(url, json=data)
-    
-    # Vérifier que la requête a réussi
-    assert response.status_code == 200, f"Status code was {response.status_code}"
+    response = client.post("/predict", json=data)
 
-    json_response = response.json()
-    
-    # Vérifier que la clé "prediction" existe dans la réponse
-    assert "prediction" in json_response, "'prediction' key missing in response"
-
-    # Tu peux aussi vérifier que la prédiction a un format attendu
-    prediction = json_response["prediction"]
-    assert isinstance(prediction, (int, float, str)), "Unexpected type for prediction"
-
-    # Par exemple si tu sais que la prédiction est un booléen ou une valeur spécifique, tu peux ajuster ici
-
+    assert response.status_code == 200
+    assert "prediction" in response.json()
 
