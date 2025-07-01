@@ -21,11 +21,12 @@ jobs:
       with:
         python-version: '3.9'
 
-    - name: Installer les dépendances
+    - name: Installer les dépendances avec nettoyage
       run: |
-        python -m pip install --upgrade pip
-        pip install numpy --upgrade
-        pip install --force-reinstall scikit-learn
+        python -m pip install --upgrade pip setuptools wheel
+        pip uninstall -y numpy scikit-learn
+        pip install numpy==1.24.3
+        pip install scikit-learn==1.2.2
         pip install -r Scripts/requirements.txt
         pip install pytest requests
 
