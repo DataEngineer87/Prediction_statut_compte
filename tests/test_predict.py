@@ -1,9 +1,15 @@
-from fastapi.testclient import TestClient
-from Scripts.fast_api import app  # importe ton app FastAPI
+import sys
+import os
 
-client = TestClient(app)
+# Ajouter la racine du projet au PYTHONPATH pour que Scripts soit trouvable
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+from Scripts.fast_api import app  # importer l'app FastAPI
+
+import requests
 
 def test_prediction_api():
+    url = "http://127.0.0.1:8000/predict"
     data = {
         "gender": "Male",
         "marital_status": "Single",
@@ -17,8 +23,11 @@ def test_prediction_api():
         "log_annual_income": 10.5
     }
 
-    response = client.post("/predict", json=data)
-
-    assert response.status_code == 200
-    assert "prediction" in response.json()
+    response = requests.post(url, json=data)
+    
+    assert response.status_code == 200, f"Status code was {response.status_code}"
+    json_response = response.json()
+    assert "prediction" in json_response, "'prediction' key missing in response"
+    prediction = json_response["prediction"]
+    assert isinstance(prediction, (int, float, str)), "Unexpected type for prediction"
 
