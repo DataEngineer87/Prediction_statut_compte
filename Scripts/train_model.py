@@ -22,7 +22,7 @@ from mlflow.models.signature import infer_signature
 
 
 # Données d'entrainement
-df_train_cleaned = pd.read_csv("/home/sacko/Documents/ProjetAchats/Donnees/df_train_cleaned.csv")
+df_train_cleaned = pd.read_csv("Donnees/df_train_cleaned.csv")
 print(df_train_cleaned.shape)
 df_train_cleaned.head() # - Affichage des premières lignes du jeu de données pour visualiser rapidement la structure et les premières valeurs.
 
@@ -31,7 +31,7 @@ df_train_cleaned.head() # - Affichage des premières lignes du jeu de données p
 
 
 # Données test
-df_test_cleaned = pd.read_csv("/home/sacko/Documents/ProjetAchats/Donnees/df_test_cleaned.csv")
+df_test_cleaned = pd.read_csv("Donnees/df_test_cleaned.csv")
 print(df_test_cleaned.shape)
 df_test_cleaned.head() # - Affichage des premières lignes du jeu de données pour visualiser rapidement la structure et les premières valeurs.
 
