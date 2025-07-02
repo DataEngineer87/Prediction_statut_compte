@@ -19,11 +19,14 @@ jobs:
       with:
         python-version: '3.9'
 
+    - name: Clean pip cache (optional but recommandé)
+      run: pip cache purge
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel
         pip install --force-reinstall numpy==1.24.3 scikit-learn==1.2.2
-        pip install -r Scripts/requirements.txt
+        pip install -r requirements.txt
         pip install --upgrade gdown
 
     - name: Download data from Google Drive
