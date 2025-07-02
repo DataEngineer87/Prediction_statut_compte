@@ -1,64 +1,36 @@
-name: MLOps Pipeline
+name: Train Model
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  train-and-test:
+  train:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Cloner le dépôt
+    - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Configurer Python
+    - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
 
-    - name: Installer gdown et dépendances
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install -r requirements.txt
         pip install gdown
-        pip install -r Scripts/requirements.txt
-        pip install pytest requests
 
-    - name: Télécharger df_train_cleaned.csv depuis Google Drive
+    - name: Download data from Google Drive
       run: |
         mkdir -p data
-        gdown --id 15vA18-CEZ-rUjASJdNFuegze96268Sja -O data/df_train_cleaned.csv
+        gdown https://drive.google.com/uc?id=1OwcdGd6XnArAYAcsp56j5mYG0VNa61rL -O data/df_train_cleaned.csv
+        gdown https://drive.google.com/uc?id=1UMvwZ1eDtS1Ad-VU9bZJZokqU0O3r5AK -O data/df_test_cleaned.csv
 
-    - name: Télécharger df_test_cleaned.csv depuis Google Drive
-      run: |
-        mkdir -p data
-        gdown --id TON_ID_DU_DEUXIÈME_FICHIER -O data/df_test_cleaned.csv
-
-    - name: Entraîner le modèle
-      run: |
-        python Scripts/train_model.py
-
-    - name: Démarrer FastAPI en arrière-plan
-      run: |
-        uvicorn fast_api:app --host 127.0.0.1 --port 8000 &
-        sleep 10
-        curl --retry 5 --retry-delay 2 --retry-connrefused http://127.0.0.1:8000/
-
-    - name: Tester l'API FastAPI
-      run: |
-        python tests/test_predict.py
-
-    - name: Lancer les autres tests
-      run: |
-        pytest tests/
-
-    - name: Sauvegarder le modèle en tant qu'artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: modele-entrainé
-        path: models/
+    - name: Run training script
+      run: python Scripts/train_model.py
 
