@@ -92,5 +92,5 @@ jobs:
         name: model-artifacts
         path: ./artifacts
 
-    - name: Run Streamlit app (example: start server)
+    - name: Run Streamlit app (example: Start Server)
       run: streamlit run Scripts/AppStreamlit.py
