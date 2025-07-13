@@ -94,4 +94,3 @@ jobs:
 
     - name: Run Streamlit app (example: start server)
       run: streamlit run Scripts/AppStreamlit.py
-
