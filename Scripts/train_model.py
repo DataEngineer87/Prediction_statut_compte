@@ -142,11 +142,13 @@ with mlflow.start_run():
     mlflow.log_metric("accuracy", acc)
 
     mlflow.sklearn.log_model(
-        sk_model=model,
-        input_example=input_example,
-        signature=signature,
-        registered_model_name="account_status_rf"
-    )
+    sk_model=model,
+    artifact_path="model",  
+    input_example=input_example,
+    signature=signature,
+    registered_model_name="account_status_rf"
+)
+
 
     joblib.dump(model, "models/model.joblib")
 
