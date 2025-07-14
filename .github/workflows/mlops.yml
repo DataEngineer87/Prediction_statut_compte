@@ -69,8 +69,12 @@ jobs:
 
       - name: Start FastAPI server
         run: |
-          nohup uvicorn Scripts.fast_api:app --host 127.0.0.1 --port 8000 &
-          sleep 5
+          nohup uvicorn Scripts.fast_api:app --host 127.0.0.1 --port 8000 > fastapi.log 2>&1 &
+          for i in {1..10}; do
+            echo "⏳ Waiting for FastAPI to be ready... attempt $i"
+            curl -s http://127.0.0.1:8000/docs > /dev/null && echo "✅ FastAPI is up!" && break
+            sleep 2
+          done
 
       - name: Run tests
         run: python Scripts/test_predict.py
