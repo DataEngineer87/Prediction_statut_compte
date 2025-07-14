@@ -46,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: train
 
-    steps:
+  steps:
     - uses: actions/checkout@v3
 
     - name: Set up Python
@@ -58,7 +58,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         pip install -r Scripts/requirements.txt
-        pip install gdown joblib streamlit
+        pip install gdown joblib streamlit fastapi uvicorn
 
     - name: Download artifacts
       uses: actions/download-artifact@v4
@@ -66,9 +66,15 @@ jobs:
         name: model-artifacts
         path: ./artifacts
 
+    - name: Start FastAPI server
+      run: |
+        nohup uvicorn Scripts.fast_api:app --host 127.0.0.1 --port 8000 &
+        sleep 5  # attendre que le serveur démarre
+
     - name: Run tests
       run: python Scripts/test_predict.py
 
+  
  # deploy:
    # runs-on: ubuntu-latest
    # needs: test
