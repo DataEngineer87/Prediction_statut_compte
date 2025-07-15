@@ -40,7 +40,7 @@ jobs:
           done
 
       - name: Run API tests
-        run: python test_predict.py
+        run: python tests/test_predict.py
  
  # deploy:
    # runs-on: ubuntu-latest
